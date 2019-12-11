@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet"type="text/css" href="grid.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>jQuery UI Resizable - Default functionality</title>
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<link rel="stylesheet" href="/resources/demos/style.css">
+<style>
+#resizable { width: 150px; height: 150px; padding: 0.5em;background-color: #EDEDED; }
+#resizable2 { width: 200px; height: 100px; padding: 0.5em;background-color:#EDEDED; }
+#resizable h3 { text-align: center; margin: 0; background-color:transparent;border:none}
+#resizable2 h3 { text-align: center; margin: 0; background-color:transparent;border:none;font-family: Impact;}
+</style>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script>
+$( function() {
+  $( "#resizable" ).resizable().draggable();
+} );
+$( function() {
+  $( "#resizable2" ).resizable().draggable();
+} );
+</script>
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<body>
+<div class="header">
+ <img class="logo"src="wmdlogo.png"/>
+  <h1 class= "titre" > LE LAB</h1>
+</div>
+<div class="row">
+  <div class="column">
+      <div class="fond">
+          <h5 class="test">Ajoute tes blocs ici !</h5>
+      </div>
+        <div id="resizable" class="ui-widget-content">
+                <h3 class="ui-widget-header">HEADER</h3>
+              </div>
+        <div id="resizable2" class="ui-widget-content">
+                <h3 class="ui-widget-header">Photo</h3>
+              </div>
+  </div>
+  <div class="column2">
+    <h2 class="bloc">BLOC À AJOUTER</h2>
+    <img class="tooltiptext"src="question.svg"/>
+    <div class="tooltip">Hover over me
+            <span class="tooltiptext">Tooltip text</span>
+          </div>
+  </div>
+</div>
+
+</body>
+</html>
